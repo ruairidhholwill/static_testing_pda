@@ -14,17 +14,17 @@ class TestCardGame < Minitest::Test
 
 
   def test_check_for_ace()
-    result = check_for_ace(@card1)
-    assert_equal('true', result)
+    result = CardGame.check_for_ace(@card1)
+    assert_equal(true, result)
   end
 
   def test_highest_card()
-    result = highest_card(@card2, @card1)
-    assert_equal(5, result)
+    result = CardGame.highest_card(@card2, @card1)
+    assert_equal(@card2, result)
   end
 
   def test_cards_total()
-    result = cards_total(@cards)
+    result = CardGame.cards_total(@cards)
     assert_equal("You have a total of 6", result)
   end
 

@@ -35,6 +35,7 @@ end
 
 # 1) total should be total = 0
 # 2) in return line, should use string interpolation 
+# 3) return should be outside the for loop
 
 def self.cards_total(cards)
   total
